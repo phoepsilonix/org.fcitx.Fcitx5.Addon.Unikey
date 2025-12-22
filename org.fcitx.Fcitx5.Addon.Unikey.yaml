@@ -1,13 +1,14 @@
 app-id: org.fcitx.Fcitx5.Addon.Unikey
-branch: stable
 runtime: org.fcitx.Fcitx5
 runtime-version: stable
-sdk: org.kde.Sdk//6.9
+sdk: org.kde.Sdk//6.10
 build-extension: true
 separate-locales: false
 build-options:
   prefix: /app/addons/Unikey
   prepend-pkg-config-path: /app/addons/Unikey/lib/pkgconfig
+  no-debuginfo: true
+  strip: true
 cleanup:
   - /bin
   - /include
@@ -23,4 +24,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/fcitx/fcitx5-unikey
-        tag: 5.1.7
+        tag: 5.1.9
