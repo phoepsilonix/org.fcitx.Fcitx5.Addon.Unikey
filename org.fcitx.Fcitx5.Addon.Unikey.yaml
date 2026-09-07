@@ -1,7 +1,7 @@
 app-id: org.fcitx.Fcitx5.Addon.Unikey
 runtime: org.fcitx.Fcitx5
 runtime-version: stable
-sdk: org.kde.Sdk//6.10
+sdk: org.kde.Sdk//6.11
 build-extension: true
 separate-locales: false
 build-options:
@@ -23,5 +23,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/fcitx/fcitx5-unikey
-        tag: 5.1.11
-        commit: 7fe9cd7971064ae8ca2fb90df76b44a72e415f3e
+        tag: 5.1.12
+        commit: 304c1964552a01beb9fca1a55407fc091f14761c
